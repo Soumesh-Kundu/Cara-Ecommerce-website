@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Variables */
 :root{
     --primary-heading-clr:#222;
     --primary-paragraph-clr:#465b52;
@@ -75,9 +76,21 @@ header{
 #navbar li a.active{
     color: var(--primary-clr);
 }
-
-#navbar li a.active::after,
+#navbar li a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-clr);
+    position: absolute;
+    bottom:-5px;
+    left:0px;
+    transition: 0.3s all ease;
+}
 #navbar li a:hover::after{
+    width: 50%;
+}
+
+#navbar li a.active::after{
     content:'';
     width: 50%;
     height: 2px;

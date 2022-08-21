@@ -1,0 +1,129 @@
+/* Variables */
+:root{
+    --primary-heading-clr:#222;
+    --primary-paragraph-clr:#465b52;
+    --nav-background-clr: #E3e6f3;
+    --nav-color:#1a1a1a;
+    --primary-clr:#088178;
+}
+
+/*SHOP page intro section*/
+#page-header{
+    background-image: url('../img/banner/b1.jpg');
+    height:40vh;
+    width:100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding:14px;
+}
+#page-header h2,
+#page-header p{
+    color:white;
+}
+
+/* page changing section */
+#pageination{
+    text-align: center;
+}
+
+#pageination a{
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: var(--primary-clr);
+    padding:15px 20px;
+    border-radius: 4px;
+    margin:2px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+#pageination a span{
+    box-sizing: border-box;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    transform: translateY(30%);
+}
+
+/* product details section  */
+#product-details{
+    display: flex;
+    margin-top:20px;   
+}
+
+#main-image{
+    width: 100%;
+}
+#product-details .single-pro-image{
+    width:40%;
+    margin-right: 50px;
+}
+#product-details .small-img-group{
+    display:flex;
+    justify-content: space-between;
+}
+
+.small-img{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#product-details .small-img-group .small-img img{
+    width: 100%;
+}
+
+#product-details .single-row-details{
+    width:50%;
+    margin-top: 30px;
+}
+#product-details .single-row-details h4{
+    padding: 40px 0 20px 0;
+    font-size: 20px;
+}
+#product-details .single-row-details h2{
+    font-size: 30px;
+}
+#product-details .single-row-details select{
+    display:block;
+    padding:5px 10px;
+    margin-bottom:10px ;
+    outline: none;
+    font-size:16px
+}
+#product-details .single-row-details input{
+    width:50px;
+    height:45px;
+    padding-left:10px;
+    font-size:20px;
+    margin-right:10px;
+    /* outline: none; */
+    font-weight: 400;
+}
+#product-details .single-row-details input:focus{
+    outline:none;
+}
+
+#product-details .single-row-details button{
+    background-color: var(--primary-clr);
+    color: white;
+}
+#product-details .single-row-details span{
+    line-height: 20px;
+    font-size: 20px;
+}
+
+@media (max-width:477px){
+    #product-details{
+        display:flex;
+        flex-direction: column;
+    }
+    #product-details .single-row-details{
+        width:100%
+    }
+    #product-details .single-pro-image{
+        width:100%
+    }
+}

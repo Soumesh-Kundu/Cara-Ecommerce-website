@@ -1,0 +1,24 @@
+{
+  "name": "cara",
+  "version": "1.0.0",
+  "description": "A Online shopping website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soumesh-Kundu/Cara-Ecommerce-website.git"
+  },
+  "author": "Soumesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Soumesh-Kundu/Cara-Ecommerce-website/issues"
+  },
+  "homepage": "https://github.com/Soumesh-Kundu/Cara-Ecommerce-website#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
